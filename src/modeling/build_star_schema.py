@@ -25,7 +25,7 @@ def build_dim_patient(df):
     cols = [c for c in cols if c in df.columns]
     dim_patient = df[cols].copy()
     dim_patient.to_sql('dim_patient', con=engine, if_exists='replace', index=False)
-    print(f"✅ dim_patient created ({len(dim_patient)} rows)")
+    print(f" dim_patient created ({len(dim_patient)} rows)")
     return dim_patient
 
 def build_dim_practitioner(df):

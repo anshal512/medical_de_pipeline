@@ -25,7 +25,7 @@ def save_parquet(df: pd.DataFrame, resource_type: str):
     filename = f"{resource_type}_{timestamp}.parquet"
     file_path = os.path.join(BRONZE_PATH, filename)
     df.to_parquet(file_path, index=False)
-    print(f"✅ {filename} saved in Bronze folder.")
+    print(f" {filename} saved in Bronze folder.")
 
 if __name__ == "__main__":
     for resource in ["Patient", "Practitioner", "Condition", "Observation"]:

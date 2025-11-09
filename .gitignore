@@ -1,5 +1,28 @@
-venv/
+# Python cache
 __pycache__/
-*.parquet
-*.log
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+env/
+venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# Environment variables
 .env
+
+# Streamlit
+.streamlit/
+
+# Logs
+*.log
+
+# Parquet files
+*.parquet
+
+# Test scripts
+test_script.py

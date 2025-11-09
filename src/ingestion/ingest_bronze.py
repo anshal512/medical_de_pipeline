@@ -64,7 +64,7 @@ def ingest_parquet_to_postgres():
     for file in parquet_files:
         file_path = os.path.join(BRONZE_PATH, file)
         table_name = clean_table_name(file)
-        print(f"📥 Ingesting {file} → {table_name}...")
+        print(f" Ingesting {file} → {table_name}...")
 
         try:
             df = pd.read_parquet(file_path)
